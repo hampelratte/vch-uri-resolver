@@ -11,21 +11,22 @@
 
     <artifactId>uri.resolver</artifactId>
     <packaging>bundle</packaging>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>VCH URI Resolver Service</name>
     <description>Provides an interface to resolve VCH URIs</description>
 
     <dependencies>
         <dependency>
+            <groupId>de.berlios.vch</groupId>
+            <artifactId>parser</artifactId>
+            <type>bundle</type>
+            <scope>provided</scope>
+            <version>[3.0.0,4.0.0)</version>
+        </dependency>
+        <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.ipojo.annotations</artifactId>
             <scope>provided</scope>
-        </dependency>
-        <dependency>
-        	<groupId>de.berlios.vch</groupId>
-        	<artifactId>parser</artifactId>
-        	<type>bundle</type>
-        	<scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
