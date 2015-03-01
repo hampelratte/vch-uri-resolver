@@ -2,6 +2,12 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <artifactId>uri.resolver</artifactId>
+    <packaging>bundle</packaging>
+    <version>1.0.1-SNAPSHOT</version>
+    <name>VCH URI Resolver Service</name>
+    <description>Provides an interface to resolve VCH URIs</description>
+
     <parent>
         <artifactId>parent</artifactId>
         <groupId>de.berlios.vch</groupId>
@@ -9,11 +15,11 @@
         <relativePath>../vch-parent/pom.xml</relativePath>
     </parent>
 
-    <artifactId>uri.resolver</artifactId>
-    <packaging>bundle</packaging>
-    <version>1.0.1-SNAPSHOT</version>
-    <name>VCH URI Resolver Service</name>
-    <description>Provides an interface to resolve VCH URIs</description>
+    <scm>
+        <connection>scm:git:git@github.com/hampelratte/vch-uri-resolver.git</connection>
+        <developerConnection>scm:git:git@github.com:hampelratte/vch-uri-resolver.git</developerConnection>
+        <url>https://github.com/hampelratte/vch-uri-resolver.git</url>
+    </scm>
 
     <dependencies>
         <dependency>
